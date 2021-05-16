@@ -1,0 +1,23 @@
+{
+  "name": "react-file-type-icons",
+  "version": "1.0.0",
+  "description": "to give file-type-icon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-file-type-icons/react-file-type-icons.git"
+  },
+  "keywords": [
+    "react",
+    "file-type-icon"
+  ],
+  "author": "Ritik Goyal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-file-type-icons/react-file-type-icons/issues"
+  },
+  "homepage": "https://github.com/react-file-type-icons/react-file-type-icons#readme"
+}
