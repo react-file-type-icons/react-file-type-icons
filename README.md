@@ -2,6 +2,11 @@
 
 This package helps you in rendering icon on the basis of file-type.
 
+[![npm][npm-image]][npm-url]
+
+[npm-image]: https://img.shields.io/npm/v/react-file-type-icons.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/react-file-type-icons
+
 ## Installation
 
 ```bash
