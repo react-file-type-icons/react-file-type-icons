@@ -20,7 +20,7 @@ const assembleIcon = (iconData, svgAttrs) => {
   );
 };
 
-const GenIcon = (fileExt, colorType, size) => {
+const GenIcon = (fileExt, colorType, size, className) => {
   const iconData = IconData(colorType, fileExt);
 
   const computedSize = size || "1em";
@@ -31,6 +31,7 @@ const GenIcon = (fileExt, colorType, size) => {
     strokeWidth: "0",
     height: computedSize,
     width: computedSize,
+    className: className ? className : null,
   };
 
   return assembleIcon(iconData, svgAttrs);

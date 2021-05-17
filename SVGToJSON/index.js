@@ -25,8 +25,8 @@ const convertHtmlToJson = (htmlOb) => {
       for (let i = 0; i < len; i++) {
         const property = htmlOb.attributes[i].nodeName;
         //uncomment the below line of code for converting monoColor SVGs so that they do not contain any fill property inside there sub attributes
-        // if(!(property==='fill'))
-        nodeObject.attr[property] = htmlOb.attributes[i].nodeValue;
+        if (!(property === "fill"))
+          nodeObject.attr[property] = htmlOb.attributes[i].nodeValue;
       }
     }
   }
@@ -47,6 +47,8 @@ const convertHtmlToJson = (htmlOb) => {
 const files = fs.readdirSync(SVGFolderLocation);
 
 files.forEach((file) => {
+  if (file === ".gitignore") return;
+
   const svgFileLocation = path.join(SVGFolderLocation, file);
 
   let htmlContent = fs.readFileSync(svgFileLocation, "utf8");
