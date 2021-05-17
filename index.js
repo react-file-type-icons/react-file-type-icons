@@ -1,6 +1,13 @@
 import GenIcon from "./icons/GenIcon";
 
-const RFTIcons = ({ fileName, fileType, colorType, size, className }) => {
+const RFTIcons = ({
+  fileName,
+  fileType,
+  colorType,
+  size,
+  color,
+  className,
+}) => {
   let fileExt;
   if (fileName) {
     const regex = new RegExp("[^.]+$");
@@ -9,7 +16,7 @@ const RFTIcons = ({ fileName, fileType, colorType, size, className }) => {
 
   fileExt = fileExt.toLowerCase();
 
-  return GenIcon(fileExt, colorType, size, className);
+  return GenIcon(fileExt, colorType, size, color, className);
 };
 
 export default RFTIcons;

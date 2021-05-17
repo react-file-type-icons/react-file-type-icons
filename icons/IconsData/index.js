@@ -168,8 +168,7 @@ const IconData = (colorType, fileExt) => {
       return require(`${folderLocation}/video.json`);
 
     default:
-      console.log("Font not available");
-      break;
+      return require(`${folderLocation}/fallback.json`);
   }
 };
 

@@ -20,14 +20,14 @@ const assembleIcon = (iconData, svgAttrs) => {
   );
 };
 
-const GenIcon = (fileExt, colorType, size, className) => {
+const GenIcon = (fileExt, colorType, size, color, className) => {
   const iconData = IconData(colorType, fileExt);
 
   const computedSize = size || "1em";
 
   let svgAttrs = {
-    stroke: "currentColor",
-    fill: "currentColor",
+    stroke: color ? color : "currentColor",
+    fill: color ? color : "currentColor",
     strokeWidth: "0",
     height: computedSize,
     width: computedSize,
