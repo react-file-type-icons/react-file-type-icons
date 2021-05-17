@@ -26,13 +26,14 @@ const icon = () => {
 
 # Properties & Configuration
 
-| Property    | Default     | Notes                                                                         |
-| ----------- | ----------- | ----------------------------------------------------------------------------- |
-| `fileName`  | `undefined` | Accepts full file name (if using this property then ignore `fileType`)        |
-| `fileType`  | `undefined` | Accepts file-type (extension) (if using this property then ignore `fileName`) |
-| `colorType` | `monoColor` | `monoColor/multiColor` choose according to type of icon you want to render    |
-| `size`      | `1em`       |                                                                               |
-| `className` | `undefined` |                                                                               |
+| Property    | Default              | Notes                                                                         |
+| ----------- | -------------------- | ----------------------------------------------------------------------------- |
+| `fileName`  | `undefined`          | Accepts full file name (if using this property then ignore `fileType`)        |
+| `fileType`  | `undefined`          | Accepts file-type (extension) (if using this property then ignore `fileName`) |
+| `colorType` | `monoColor`          | `monoColor/multiColor` choose according to type of icon you want to render    |
+| `color`     | `undefined`(inherit) | Only for icons of colorType `monoColor`                                       |
+| `size`      | `1em`                |                                                                               |
+| `className` | `undefined`          |                                                                               |
 
 ## License
 
