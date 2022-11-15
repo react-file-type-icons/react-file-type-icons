@@ -7,7 +7,7 @@ const assembleChildElements = (child) => {
     return child.map((grandChild, idx) =>
       React.createElement(
         grandChild.tag,
-        { ...grandChild.attr, idx: `idx${idx}` },
+        { ...grandChild.attr, key: `idx${idx}` },
         assembleChildElements(grandChild.child)
       )
     );
