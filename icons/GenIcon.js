@@ -4,10 +4,10 @@ import IconData from "./IconsData";
 
 const assembleChildElements = (child) => {
   if (child)
-    return child.map((grandChild) =>
+    return child.map((grandChild, idx) =>
       React.createElement(
         grandChild.tag,
-        { ...grandChild.attr },
+        { ...grandChild.attr, key: `idx${idx}` },
         assembleChildElements(grandChild.child)
       )
     );
